@@ -1,0 +1,33 @@
+.container-vehicule {
+  @apply border-green border-solid border-[1px] rounded-lg text-[16px] text-center font-bold leading-[34px] py-[25px];
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Inter", sans-serif;
+}
+.separator-vehicule {
+  @apply h-[1px] w-4/5 lg:w-[1px] bg-yellow mx-auto mt-[20px];
+}
+.container-images {
+  @apply mb-2;
+}
+.container-images img {
+  width: calc(25% - 9px);
+  aspect-ratio: 14/9;
+  margin-right: 12px;
+}
+.container-images img:first-child {
+  width: 100%;
+  margin-right: 0;
+}
+.container-images img:last-child {
+  margin-right: 0;
+}
+.container-form-vehicule {
+  @apply border-green border-solid border-[1px] rounded-lg flex flex-col items-center py-[25px] px-[20px];
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.25);
+}
+.btn-submit:hover {
+  @apply bg-green text-white;
+}
+.add-vehicule-label .add-vehicule-span {
+  @apply text-gray-400 font-normal;
+}

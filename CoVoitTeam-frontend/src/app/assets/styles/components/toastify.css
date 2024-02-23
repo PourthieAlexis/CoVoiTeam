@@ -1,0 +1,30 @@
+.toast-success {
+  background-color: rgba(73, 177, 112, 0.69);
+  border-color: #018383;
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.25);
+}
+.toast-error {
+  background-color: rgba(255, 99, 71, 0.69);
+  border-color: #83010c;
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.25);
+}
+.toast-info {
+  background-color: rgba(37, 99, 235, 0.69);
+  border-color: #0c0183;
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.25);
+}
+.toast-warning {
+  background-color: rgba(255, 255, 0, 0.69);
+  border-color: #999902;
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.25);
+}
+.toast-default {
+  background-color: rgba(79, 70, 229, 0.69);
+  border-color: rgb(49, 46, 129);
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.25);
+}
+.toast-dark {
+  background-color: rgba(209, 213, 219, 0.69);
+  border-color: #444444;
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.25);
+}

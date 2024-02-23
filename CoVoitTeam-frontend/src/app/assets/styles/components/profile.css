@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1,
+.container span {
+  color: #018383;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container span {
+  font-size: 16px;
+}
+
+h1.profileTitle {
+  font-size: 32px;
+  font-family: Archivo Narrow;
+}
+
+.credit p {
+  font-size: 14px;
+  text-decoration-line: underline;
+}
+
+.credit span {
+  color: #e9b824;
+  font-size: 16px;
+  text-decoration-line: none;
+}
+
+.container p {
+  color: #414141;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #018383;
+  border-radius: 10px;
+  padding: 16px;
+  width: 80%;
+  box-shadow: 6px 4px 13px 0px rgba(0, 0, 0, 0.7);
+}
+
+.profileCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #018383;
+  border-radius: 10px;
+  padding: 16px;
+  width: 80%;
+}
+
+.profileCard label {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.profileCard p:first-child {
+  margin-top: 1rem;
+}
+
+.profileCard p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.profileCard p {
+  margin: 2rem;
+  margin-left: 1rem;
+}
+
+.buttonProfile {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonProfile button {
+  border-radius: 4px;
+  width: 140px;
+  min-height: 2.5rem;
+  height: auto;
+  border: 1px solid #018383;
+  color: #018383;
+}
+
+.divider {
+  display: flex;
+  justify-self: center;
+  height: 1px;
+  width: 50%;
+  background-color: #e9b824;
+  margin: 10px 0;
+  margin-top: 3rem;
+}
+
+.tripCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #018383;
+  border-radius: 10px;
+  padding: 16px;
+  width: 80%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tripCard p {
+  color: #018383;
+  font-family: Archivo Narrow;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tripCard span {
+  color: #e9b824;
+  font-family: Archivo Narrow;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* address */
+.content-profile-show {
+  @apply border-green border-solid border-[1px] rounded-lg text-[16px] text-center font-bold leading-[34px] py-[25px];
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Inter", sans-serif;
+}
+.item-profile-show {
+  @apply w-full flex flex-col lg:flex-row lg:pl-8 text-center lg:text-left;
+}

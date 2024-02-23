@@ -1,0 +1,29 @@
+.trips-container{
+  width: calc(100% - 100px);
+  @apply mx-auto lg:w-full lg:px-8;
+}
+.div-trips-geolocation {
+  @apply w-full pb-4 lg:pb-10 relative  mt-4 px-4 lg:px-10;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #018383;
+  background: #fff;
+  box-shadow: 6px 4px 13px 0px rgba(0, 0, 0, 0.7);
+  &::before {
+    @apply block lg:invisible w-[102px] lg:w-[300px] h-[96px] lg:h-[84px] absolute top-[-65px] left-[-23px] rotate-[-10deg];
+    content: "";
+    background: url("../../../assets/images/voiture_jaune_small_paysage.png")
+      no-repeat center/cover;
+  }
+  &::after {
+    @apply block w-[170px] lg:w-[300px] h-[84px] lg:h-[200px] absolute top-[-64px] lg:top-[-148px] right-[-48px] lg:right-0 lg:left-[395px];
+    content: "";
+    background: url("../../../assets/images/Voiture_verte_small.png") no-repeat
+      center/cover;
+  }
+}
+
+.trips-items-geolocation {
+  @apply w-full max-w-[1096px] flex flex-col md:flex-row justify-around items-center bg-gray mx-auto mt-4 lg:mt-10 px-4;
+  height: 94px;
+}

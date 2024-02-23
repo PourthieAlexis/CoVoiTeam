@@ -1,0 +1,39 @@
+@tailwind components;
+
+@layer components {
+
+
+
+    .login-title {
+        @apply text-green text-5xl font-ArchivoNarrow font-semibold text-center;
+      }
+    
+      .login-box {
+        @apply w-[736px] h-[705px] flex-shrink-0 rounded-[10px] border border-green bg-white shadow-shadowLoginForm;
+      }
+
+      .input-login {
+       @apply w-[558px] h-[70px] hover:border-[3px] hover:border-yellow border-b-[3px] border-b-yellow border-0 bg-opacity-80 mx-auto shadow-shadowLoginInput block;
+    }
+
+    .login-email-label {
+      @apply mt-[38px] block text-2xl font-normal text-teal-600 pl-[89px] w-[418px] h-[46px];
+    }
+    
+    .login-password-label {
+        @apply block text-2xl font-normal text-teal-600 pl-[89px] w-[418px] h-[46px];
+        margin-top: 28px !important;
+    }
+
+      .forgot-password-link {
+        @apply ml-[89px] mr-[225px] w-[200px] h-[46px] flex flex-col flex-shrink-0 text-[#BBB] text-xl font-normal;
+        margin-top: 18px !important;
+        margin-bottom: 38px !important;
+        
+    }
+
+    .validation-login {
+      @apply w-[459px] h-[77px] flex-shrink-0 rounded-[10px] border-2 border-green text-green mx-auto hover:bg-green hover:text-white;
+}
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="{{ absolute_url(asset('css/signUpEmail.css')) }}">
+	</head>
+	<body>
+		<div class='body'>
+			<div class='container'>
+				<div class='header-container'>
+					<div class='logoContainer'>
+						<img src="{{ absolute_url(asset('images/CoVoitEaseLogo.png')) }}" alt="LogoCVT">
+					</div>
+					<h1 class='title1'>Validation de
+						<span class="title2">votre inscription</span>
+					</h1>
+				</div>
+				<div class='bannerContainer'>
+					<img src="{{ absolute_url(asset('images/banner.png')) }}" alt="bannerCVT">
+				</div>
+				<div class='content'>
+					<p>
+						Bonjour
+						{{name}},<br>
+
+						La création de votre compte CoVoitEase est confirmée.<br>
+
+						Connectez vous dès maintenant :
+						<a href="http://localhost:5173/verifyEmail/{{token}}">Clique ici</a><br>
+
+						À très bientôt sur CoVoitEase.fr
+						<br>
+
+						L'équipe CoVoitEase
+					</p>
+				</div>
+				<div class='media-container'>
+					<div class='media'>
+						<p>Suivez nous sur :
+						</p>
+						<div class='media-logo'>
+							<img src="{{ absolute_url(asset('images/facebookLogo.png')) }}" alt="facebookLogo">
+							<img src="{{ absolute_url(asset('images/xLogo.png')) }}" alt="xLogo">
+							<img src="{{ absolute_url(asset('images/instaLogo.png')) }}" alt="instaLogo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

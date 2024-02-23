@@ -1,0 +1,28 @@
+controllers:
+  resource:
+    path: ../src/Action/
+    namespace: App\Action
+  type: attribute
+verify_email:
+  path: "/verifyEmail/{token}"
+  controller: 'App\Action\RegisterUserAction::verifyEmail'
+  methods: ["GET"]
+password_reset:
+  path: "/api/password-reset"
+  controller: 'App\Action\PasswordResetAction::__invoke'
+  methods: ["POST"]
+password_update:
+  path: "/api/password-update"
+  controller: 'App\Action\PasswordUpdateAction::__invoke'
+  methods: ["POST"]
+add-address:
+  path: "/api/add-address"
+  controller: 'App\Action\RegisterAddressAction::__invoke'
+  methods: ["POST"]
+auth:
+  path: /auth
+  methods: ["POST"]
+
+api_doc:
+  path: /api/docs
+  controller: api_platform.swagger_ui.action

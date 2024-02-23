@@ -1,0 +1,41 @@
+@layer components {
+  /* DECORATION */
+  .image-form-left {
+    @apply absolute top-[-200px] left-[-205px] w-[375px] h-[375px] z-[-1];
+    background: url("../../images/car-yellow-left-alone.png") no-repeat;
+    transform: rotate(-90deg);
+  }
+  .image-form-right {
+    @apply absolute bottom-[-250px] right-[-240px] w-[375px] h-[375px] z-[0];
+    background: url("../../images/car-green-right-alone.png") no-repeat;
+    transform: rotate(10deg);
+  }
+}
+.row-form-register {
+  @apply flex h-[170px];
+}
+.label-form-register {
+  @apply text-green h-[46px] text-[24px];
+  font-family: "Inter", sans-serif;
+}
+.input-form-register {
+  @apply h-[70px] bg-gray border-0 border-b-[3px] border-yellow mb-[13px] px-[25px] py-[6px] text-gray-dark text-[24px];
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Inter", sans-serif;
+  &:hover {
+    @apply border-yellow border-2;
+  }
+  &:focus {
+    @apply border-yellow border-2;
+    --tw-ring-color: transparent;
+  }
+}
+.error-form-register {
+  @apply text-red-600 text-[18px] h-[46px] leading-[46px];
+}
+.checkbox-form-register {
+  @apply border-yellow border-[1px] w-[30px] h-[30px] mr-[8px];
+  &:hover {
+    @apply border-yellow border-2 cursor-pointer;
+  }
+}

@@ -1,0 +1,34 @@
+@tailwind components;
+
+@layer components {
+
+.navbar {
+    @apply absolute mx-auto w-full bg-navbar shadow-sm
+}
+
+.link-navbar {
+    @apply text-white cursor-pointer font-Inter text-xl pr-[53px] hover:text-yellow;
+  }
+
+
+.link-dropdown-navbar {
+    @apply text-white cursor-pointer font-Inter text-xl text-center hover:text-yellow;
+  }
+
+.menu-items {
+    @apply -left-7
+}
+
+.bell-navbar {
+    @apply  text-white cursor-pointer font-Inter pr-[41px];
+
+  }
+
+.bell-notification {
+    @apply flex justify-center items-center relative;
+  }
+
+.bell-notification-content {
+    @apply font-Inter text-white;
+  }
+}

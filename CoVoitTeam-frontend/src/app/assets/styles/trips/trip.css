@@ -1,0 +1,69 @@
+.trip-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #018383;
+  box-shadow: 6px 4px 13px 0px rgba(0, 0, 0, 0.70);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  width: 70vw;
+}
+
+.trip-step {
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-line {
+  width: 2px;
+  height: 44px;
+  background-color: #E9B824;
+}
+
+.trip-bubble-departure,
+.trip-bubble-step,
+.trip-bubble-arrival {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.trip-step-text{
+  @apply flex flex-col gap-11
+}
+
+.trip-step-text p{
+  @apply flex items-center h-[16px] ml-2;
+}
+
+.trip-bubble-departure
+{
+  background-color: #018383;
+}
+.trip-bubble-step{
+  background-color: #0C2156;
+}
+.trip-bubble-arrival {
+  background-color: #E9B824;
+}
+
+.step-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textBlue,.textYellow{
+  color: #E9B824;
+  font-weight: 700;
+  font-family: Archivo Narrow;  
+}
+
+.textBlue{
+  color: #018383;
+}
+.textYellow{
+  color: #E9B824;
+  
+}

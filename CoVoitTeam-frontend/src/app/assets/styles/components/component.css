@@ -1,0 +1,120 @@
+@tailwind components;
+
+@layer components {
+  #root {
+    @apply h-full;
+  }
+
+  /* HOME VIEW */
+
+  .logoCovoitease {
+    @apply flex self-center object-cover h-16 w-64;
+  }
+
+  .whatIsCovoitease {
+    background: url("../../images/WhatIsCoVoitEase.png") no-repeat center/cover;
+  }
+
+  /* END HOME VIEW */
+
+  /* SEARCH BAR */
+
+  .searchbar-container {
+    @apply h-[288px] lg:h-[377px] bg-no-repeat lg:bg-center lg:bg-contain md:mb-[190px] lg:mb-0;
+    background-image: url("../../../assets/images/bandeau_home_page.png");
+    background-size: 120%;
+    background-position: top center;
+  }
+  .searchbar-content {
+    width: calc(100% - 64px);
+    @apply lg:w-fit sm:max-w-[640px] lg:max-w-none  border-green lg:border-black border-solid border-2 lg:border-[1px] rounded-lg flex justify-center absolute bottom-[-15px] md:bottom-[-155px] lg:bottom-[75px] left-2/4;
+
+    transform: translateX(-50%);
+  }
+  .searchbar-input {
+    @apply w-full lg:w-[170px] xl:w-[273px];
+  }
+  .searchbar-input-departure {
+    @apply w-full lg:h-full text-left lg:text-center searchbar-font border-0 rounded-tl-lg rounded-tr-lg lg:rounded-bl-lg border-yellow border-b-2 lg:border-b-0 placeholder:text-black focus:border-black focus:ring-0;
+  }
+  .searchbar-input-destination {
+    @apply w-full lg:h-full text-left lg:text-center searchbar-font border-0  lg:border-x-2 border-yellow border-b-2 lg:border-b-0 lg:border-t-black lg:border-b-black placeholder:text-black focus:border-x-secondary focus:border-y-black  focus:ring-0;
+  }
+  .datepicker-container {
+    @apply w-3/5 lg:w-[170px] xl:w-[273px] searchbar-font md:leading-[20px] flex items-center border-y p-2;
+  }
+  .seats-container {
+    @apply w-2/5 lg:w-[149px] flex items-center border-l-2 border-yellow lg:border-y lg:border-b-0 lg:border-t-0 focus:border-black focus:ring-0 p-2;
+  }
+  .searchbar-btn-submit {
+    @apply w-full lg:w-40 xl:w-[273px] h-[55px] lg:h-[58px] xl:h-[60px] flex items-center searchbar-font md:leading-[20px] border-0 rounded-bl-lg rounded-br-lg;
+  }
+  .searchbar-font {
+    @apply text-[16px] sm:text-[22px] xl:text-[36px];
+    font-family: "Inter", sans-serif;
+  }
+  .searchbar-border-desktop {
+  }
+  /* END SEARCH BAR */
+
+  /* POINTSYSTEM */
+  .point-system-image {
+    background: url("../../../assets/images/coin.png") no-repeat center/contain;
+  }
+  .btn-read-more {
+    @apply block w-1/2 h-[34px] leading-[32px] border-[1px] border-solid border-yellow mx-auto text-center text-yellow rounded-md my-[28px];
+  }
+  .point-system-logo {
+    @apply w-[450px] h-[145px];
+    background: url("../../../assets/images/logo_covoitease.png") no-repeat
+      center/cover;
+  }
+  /* END POINTSYSTEM */
+
+  /* FOOTER */
+
+  .title-footer {
+    @apply text-3xl p-3;
+    color: #e9b824;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .text-footer {
+    color: rgba(255, 255, 255, 0.74);
+    text-align: center;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .footer-social-media {
+    @apply flex items-center justify-center;
+  }
+
+  .footer-social-media a {
+    @apply flex justify-center;
+  }
+
+  .yellowBar {
+    background: #e9b824;
+    box-shadow: 0px 1px 4px 0px #fff;
+  }
+
+  /* END FOOTER */
+
+  /* LINKS */
+  .link {
+    @apply text-base font-medium text-gray-500 cursor-pointer hover:text-primary;
+  }
+
+  /* END LINKS */
+
+  /* GEOMETRY */
+  .point {
+    @apply w-4 h-4 p-2 mt-2 rounded-full;
+  }
+}
